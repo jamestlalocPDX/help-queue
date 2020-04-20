@@ -1,0 +1,40 @@
+Write a functions that takes the base and height of a triangle and returns the area.
+equation:
+
+Area of a trianle = 1/2 base * height;
+Base
+height
+
+function findArea(base, height) {
+
+  let area = (base * height) / 2;
+
+  return area;
+}
+
+
+1    *   (base * height)
+\  
+2
+
+create a function that takes in an int and returns an int if divisasble by 100
+
+const div100 = function(number) {
+  if (number % 100 === 0) {
+    return true;
+  else {
+    return false;
+    }
+  }
+}
+
+create func , true if string is empty , false if not
+
+const stringEmptyYAY = (string) => {
+  if (string === " ") {
+    return false;
+    else {
+      return true;
+    }
+  }
+}
