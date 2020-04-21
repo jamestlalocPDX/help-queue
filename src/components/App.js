@@ -6,7 +6,7 @@ function App(){
   return (
     <React.Fragment>
       <Header />
-      <TicketList />
+      <TicketControl />
     </React.Fragment>
   );
 }
