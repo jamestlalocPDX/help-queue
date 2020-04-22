@@ -11,7 +11,13 @@ class TicketControl extends React.Component {
       masterTicketList: []
     };
   }
-
+  
+  handleAddingNewTicketToList = (newTicket) => {
+    const newMasterTicketList = this.state.masterTicketList.concat(newTicket);
+    this.setState({masterTicketList: newMasterTicketList});
+    this.setState({formVisibleOnPage: false});
+  }
+  
   handleClick = () => {
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
@@ -35,7 +41,6 @@ class TicketControl extends React.Component {
       </React.Fragment>
     );
   }
-
 }
 
 export default TicketControl;
